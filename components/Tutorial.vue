@@ -47,6 +47,18 @@
 
 <script>
 export default {
-  name: 'NuxtTutorial'
+  name: 'NuxtTutorial',
+  data() {
+    return {
+      attr: {
+        a: {
+          b: 1
+        }
+      }
+    }
+  },
+  created () {
+    console.log(this.attr.a?.b)
+  }
 }
 </script>
